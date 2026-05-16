@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portfolio Sawlvl</title>
+	<title>Portfolio SAW</title>
 	<link rel="stylesheet" type="text/css" href="../src/assets/styles/style.css">
 </head>
+
 <body>
 	<nav class="navigation">
 		<ul>
@@ -17,61 +19,100 @@
 
 	<div class="hero">
 		<div class="description">
-			<h3>Etudiant en BTS CIEL.</h3>
-			<p></p>
-			<button>En savoir plus</button>
+			<h3><strong class="important">Étudiant Dev & Réseaux</strong></h3>
+			<hr>
+			<p>Passionné par le <strong class="important">développement</strong>, je conçois des projets concrets et
+				fonctionnels. Autodidacte et rigoureux, je crée des <strong class="important">applications web</strong>
+				utiles.</p>
+			<button><strong>En savoir plus</strong></button>
 		</div>
 	</div>
 
-	<hr>
-	<div class="scroll_techno">
-		<img src="assets/icons/HTML.svg" alt="HTML">
-		<img src="assets/icons/CSS.svg" alt="CSS">
-		<img src="assets/icons/JavaScript.svg" alt="JS">
-		<img src="assets/icons/Java.svg" alt="JAVA">
-		<img src="assets/icons/Github.svg" alt="GITHUB">
-		<img src="assets/icons/Git.svg" alt="GIT">
+	<hr class="trait">
+	<div class="scroll_container">
+		<div class="scroll_techno">
+			<img src="assets/icons/HTML.svg" alt="HTML">
+			<img src="assets/icons/CSS.svg" alt="CSS">
+			<img src="assets/icons/JavaScript.svg" alt="JS">
+			<img src="assets/icons/Java.svg" alt="JAVA">
+			<img src="assets/icons/Github.svg" alt="GITHUB">
+			<img src="assets/icons/Git.svg" alt="GIT">
+		</div>
 	</div>
-	<hr>
+	<hr class="trait">
 
 	<div id="projects"></div>
 
-	<hr>
+	<hr class="trait">
 	<div id="avis_users"></div>
-	<hr>
+	<hr class="trait">
 
-	<div>
-		<div>
-			<img src="" alt="">
+	<div class="presentation_container">
+		<div class="presentation">
+			<img src="" alt=" PP">
 			<p></p>
-			<hr>
-			<p></p>
+			<p>Mon nom est Wilstan Sanquer, alias <strong class="important">SAW</strong>. <br>
+				J’ai commencé le développement durant l'enfance avec de petits projets.</p>
+
+			<p>Je suis passionné par le <strong class="important">développement</strong>et le <strong
+					class="important">réseau</strong>. <br>
+				Autodidacte et sérieux, j’apprends en continu pour progresser dans ces domaines.</p>
+
+			<p>Je construis des projets <strong class="important">modernes</strong> et <strong
+					class="important">utiles</strong>.</p>
 		</div>
-		<a href="../src/assets/pdf/CV.pdf"><button>CV Download</button></a>
+		<a href="../src/assets/pdf/CV.pdf" target="_blank"><button>CV Download</button></a>
 	</div>
 
-	<hr>
+	<hr class="trait">
 	<div class="scroll_stages">
 		<a href="https://grafipolis.fr/"><img src="assets/stages/grafipolis.png" alt="Grafipolis"></a>
-		<a href="https://kubsystemes.fr/"><img src="assets/stages/" alt="KUB Systemes"></a>
+		<a href="https://kubsystemes.fr/"><img src="assets/stages/kub_systemes_logo.jpg" alt="KUB Systemes"></a>
 		<a href="https://covaldem11.fr/"><img src="assets/stages/covaldem11.png" alt="Covaldem11"></a>
-		<a href="https://ville-castelnaudary.fr/fr"><img src="assets/stages/castel.png" alt="Mairie Castel"></a>
+		<a href="https://ville-castelnaudary.fr/fr"><img src="" alt="Mairie Castel"></a>
 	</div>
-	<hr>
+	<hr class="trait">
 
 	<div class="formulaire_container">
 		<div class="formulaire">
-			<h4></h4>
-			<p></p>
-			<button>Envoyer</button>
+			<h4>Contact</h4>
+			<p>Actuellement en formation BTS CIEL, <br>
+				je suis à la recherche d’opportunités professionnelles me permettant de développer mes compétences <br>
+				et de mettre en pratique mes connaissances.</p>
+			<p>Je reste à votre disposition pour toute information complémentaire <br>
+				ou pour échanger concernant une collaboration ou une proposition de stage. <br>
+				Je vous répondrai dans les meilleurs délais.</p>
+			<a href="mailto:w.sanquer@proton.me">
+				<button>Envoyer</button>
+			</a>
 		</div>
 	</div>
 
 	<footer>
-		<p>Made with <strong>HTML5</strong>, <strong>CSS3</strong> & <strong>JavaScript</strong></p>
-		<a href="">View codesource on GitHub</a>
-		<p>Wilstan Sanquer 2026 © All rights reserved</p>
+		<div class="footer_link">
+			<p>Made with <strong>HTML5</strong>, <strong>CSS3</strong> & <strong>JavaScript</strong></p>
+			<a href="https://github.com/wilstan-sanquer/portfolio" class="github_link">
+				View codesource on GitHub
+			</a>
+
+			<div class="socials">
+				<a href="https://www.linkedin.com/in/wilstan-sanquer/" class="reseau">
+					<img src="../public/assets/icons/LinkedIn.svg" alt="">
+				</a>
+
+				<a href="https://github.com/wilstan-sanquer" class="reseau">
+					<img src="../public/assets/icons/Github.svg" alt="">
+				</a>
+
+				<a href="https://gitlab.com/sawlvl" class="reseau">
+					<img src="../public/assets/icons/GitLab-Dark.svg" alt="">
+				</a>
+			</div>
+			<p>Wilstan Sanquer 2026 © All rights reserved</p>
+		</div>
+
 	</footer>
 	<script type="module" src="../src/main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,179 @@
+@font-face {
+	font-family: "Ubuntu-Regular";
+	src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
+}
+
+* {
+	text-decoration: none;
+	font-family: "Ubuntu-Regular", sans-serif;
+}
+
+.important {
+	color: #0D5412;
+}
+
+body {
+	background-color: #09143D;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+.navigation {
+	list-style-type: none;
+	text-align: right;
+}
+
+.navigation ul {
+	display: flex;
+	justify-content: end;
+	margin-right: 30px;
+	gap: 1rem;
+	list-style: none;
+}
+
+.trait {
+	color: black;
+}
+
+.hero {
+	display: flex;
+	justify-content: end;
+	height: 100vh;
+}
+
+.description {
+	border: solid 1px #00000088;
+	border-radius: .5rem;
+	background-color: #00000088;
+	text-align: center;
+	width: 600px;
+	height: 250px;
+	padding: 1rem;
+	margin-right: 30px;
+	margin-top: 330px;
+}
+
+.description h3 {
+	font-size: 1.5rem;
+}
+
+.description hr {
+	width: 210px;
+	color: white;
+}
+
+.description p {
+	font-size: 1.25rem;
+	line-height: 1.75 rem;
+	color: white;
+}
+
+.description button {
+	height: 70px;
+	width: 150px;
+	background-color: #63666f;
+	color: white;
+	border-radius: .5rem;
+	font-size: 1rem;
+}
+
+.scroll_container {
+	overflow: hidden;
+	width: 100%;
+}
+
+.scroll_techno {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 30px;
+	width: max-content;
+	animation: scrollLeft 10s linear infinite;
+}
+
+.scroll_techno img {
+	height: 70px;
+	width: auto;
+	padding: 10px;
+}
+
+.presentation_container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	border: solid 2px red;
+	width: 800px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+
+.presentation_container button {
+	height: 50px;
+	width: 150px;
+	background-color: #63666f;
+	color: white;
+	border-radius: .3rem;
+	font-size: 1rem;
+}
+
+.presentation {
+	font-size: 18px;
+}
+
+.presentation img {
+	height: 120px;
+	width: 120px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.scroll_stages img {
+	height: 70px;
+	width: auto;
+	padding: 10px;
+}
+
+.formulaire_container {}
+
+.formulaire {}
+
+.footer_link {
+	text-align: center;
+	background-color: #1f2123;
+	color: white;
+	padding: 30px;
+	margin-top: 20px;
+	border-top: 5px solid #0D5412;
+	line-height: 40px;
+	font-size: 16px;
+}
+
+.footer_link strong {
+	background-color: white;
+	color: #1f2123;
+	border-radius: 2px;
+	padding: 2px;
+}
+
+.github_link {
+	display: block;
+	color: white;
+}
+
+.reseau {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.reseau img {
+	height: 50px;
+	width: auto;
+}
+
+.socials {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	margin: 20px 0;
+}
