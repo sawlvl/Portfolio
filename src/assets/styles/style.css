@@ -17,11 +17,23 @@ body {
 	color: white;
 	margin: 0;
 	padding: 0;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 .navigation {
 	list-style-type: none;
 	text-align: right;
+	border: #00000088 solid 1px;
+	background-color: #00000088;
+	border-radius: .5rem;
+	margin-top: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.navigation a{
+	color: white;
 }
 
 .navigation ul {
@@ -34,6 +46,8 @@ body {
 
 .trait {
 	color: black;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .hero {
@@ -65,12 +79,12 @@ body {
 
 .description p {
 	font-size: 1.25rem;
-	line-height: 1.75 rem;
+	line-height: 1.75rem;
 	color: white;
 }
 
 .description button {
-	height: 70px;
+	height: 50px;
 	width: 150px;
 	background-color: #63666f;
 	color: white;
@@ -79,38 +93,77 @@ body {
 }
 
 .scroll_container {
-	overflow: hidden;
 	width: 100%;
+	padding: 50px 0 50px 0;
+	overflow: visible;
 }
 
 .scroll_techno {
 	display: flex;
-	flex-wrap: nowrap;
-	gap: 30px;
 	width: max-content;
-	animation: scrollLeft 10s linear infinite;
+	gap: 60px;
+	animation: marquee 30s linear infinite;
+	will-change: transform;
 }
 
-.scroll_techno img {
+.scroll_techno:hover {
+	animation-play-state: paused;
+}
+
+.techno-item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 70px;
+}
+
+.techno-item img {
 	height: 70px;
-	width: auto;
-	padding: 10px;
+	width: 70px;
+	transition: filter 0.3s ease;
 }
 
+.techno-item:hover img {
+	filter: grayscale(1);
+}
+
+.techno-name {
+	position: absolute;
+	top: 85px;
+	white-space: nowrap;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	font-weight: bold;
+	color: #fff;
+	pointer-events: none;
+}
+
+.techno-item:hover .techno-name {
+	opacity: 1;
+}
+
+@keyframes marquee {
+	from { transform: translateX(0); }
+	to { transform: translateX(-50%); }
+}
 .presentation_container {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	border: solid 2px red;
-	width: 800px;
+	border: solid 2px #00000088;
+	background-color: #00000088;
+	border-radius: .5rem;
+	width: 600px;
 	margin: 0 auto;
 	padding: 2rem;
 	text-align: center;
 }
 
 .presentation_container button {
-	height: 50px;
-	width: 150px;
+	height: 40px;
+	width: 140px;
 	background-color: #63666f;
 	color: white;
 	border-radius: .3rem;
@@ -122,28 +175,90 @@ body {
 }
 
 .presentation img {
-	height: 120px;
-	width: 120px;
+	height: 80px;
+	width: 80px;
 	object-fit: cover;
 	border-radius: 50%;
+}
+
+.marquee-wrapper {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.marquee-content {
+	display: flex;
+	width: 200%;
+	animation: marquee 20s linear infinite;
+	will-change: transform;
+}
+
+.marquee-content a {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .scroll_stages img {
 	height: 70px;
 	width: auto;
-	padding: 10px;
+	object-fit: contain;
 }
 
-.formulaire_container {}
+.scroll_stages:hover {
+	animation-play-state: paused;
+}
 
-.formulaire {}
+@keyframes marquee {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(-50%); }
+}
+
+.formulaire_container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	border: solid 2px #00000088;
+	background-color: #00000088;
+	border-radius: .5rem;
+	width: 600px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+
+.formulaire {
+	text-align: center;
+}
+
+.formulaire button {
+	height: 30px;
+	width: 120px;
+	background-color: #63666f;
+	color: white;
+	border-radius: .3rem;
+	font-size: 1rem;
+	margin-top: 10px;
+}
+
+.formulaire h4{
+	font-size: 1.5rem;
+}
+
+.formulaire p{
+	font-size: 1.1rem;
+	line-height: 1.75rem;
+	color: white;
+}
 
 .footer_link {
 	text-align: center;
 	background-color: #1f2123;
 	color: white;
 	padding: 30px;
-	margin-top: 20px;
+	margin-top: 30px;
 	border-top: 5px solid #0D5412;
 	line-height: 40px;
 	font-size: 16px;
@@ -154,6 +269,7 @@ body {
 	color: #1f2123;
 	border-radius: 2px;
 	padding: 2px;
+	margin: 1px;
 }
 
 .github_link {
@@ -163,7 +279,6 @@ body {
 
 .reseau {
 	display: inline-block;
-	margin: 0 5px;
 }
 
 .reseau img {
@@ -175,5 +290,10 @@ body {
 	display: flex;
 	justify-content: center;
 	gap: 15px;
-	margin: 20px 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.signature{
+	margin: 0;
 }

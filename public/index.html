@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,9 +9,9 @@
 <body>
 	<nav class="navigation">
 		<ul>
-			<li>Projets</li>
-			<li>A Propos</li>
-			<li>Contact</li>
+			<li><a href="#projets">Projets</a></li>
+			<li><a href="#presentation">À propos</a></li>
+			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</nav>
 
@@ -30,48 +28,96 @@
 
 	<hr class="trait">
 	<div class="scroll_container">
-		<div class="scroll_techno">
-			<img src="assets/icons/HTML.svg" alt="HTML">
-			<img src="assets/icons/CSS.svg" alt="CSS">
-			<img src="assets/icons/JavaScript.svg" alt="JS">
-			<img src="assets/icons/Java.svg" alt="JAVA">
-			<img src="assets/icons/Github.svg" alt="GITHUB">
-			<img src="assets/icons/Git.svg" alt="GIT">
+		<div class="scroll_techno" id="scroller">
+			<div class="techno-item">
+				<img src="assets/icons/HTML.svg" alt="HTML">
+				<span class="techno-name">HTML</span>
+			</div>
+			<div class="techno-item">
+				<img src="assets/icons/CSS.svg" alt="CSS">
+				<span class="techno-name">CSS</span>
+			</div>
+			<div class="techno-item">
+				<img src="assets/icons/JavaScript.svg" alt="JS">
+				<span class="techno-name">JavaScript</span>
+			</div>
+			<div class="techno-item">
+				<img src="assets/icons/C.svg" alt="C">
+				<span class="techno-name">C</span>
+			</div>
+			<div class="techno-item">
+				<img src="assets/icons/Java.svg" alt="JAVA">
+				<span class="techno-name">Java</span>
+			</div>
+			<div class="techno-item">
+				<img src="assets/icons/Git.svg" alt="GIT">
+				<span class="techno-name">Git</span>
+			</div>
+			<div class="techno-item">
+				<img src="assets/icons/Github.svg" alt="GITHUB">
+				<span class="techno-name">GitHub</span>
+			</div>
+			<div class="techno-item">
+				<img src="assets/icons/GitLab-Dark.svg" alt="GITLAB">
+				<span class="techno-name">GitLab</span>
+			</div>
+			<div class="techno-item">
+				<img src="assets/icons/WebStorm.svg" alt="WEBSTORM">
+				<span class="techno-name">WebStorm</span>
+			</div>
+			<div class="techno-item">
+				<img src="assets/icons/Idea.svg" alt="INTELIJ IDEA">
+				<span class="techno-name">IntelliJ</span>
+			</div>
+			<div class="techno-item">
+				<img src="assets/icons/Linux.svg" alt="LINUX">
+				<span class="techno-name">Linux</span>
+			</div>
+			<div class="techno-item">
+				<img src="assets/icons/Vercel.svg" alt="VERCEL">
+				<span class="techno-name">Vercel</span>
+			</div>
 		</div>
 	</div>
-	<hr class="trait">
-
-	<div id="projects"></div>
 
 	<hr class="trait">
-	<div id="avis_users"></div>
+	<div id="projects"><p>Projets</p></div>
 	<hr class="trait">
+
+	<div id="avis_users"><p>Avis Camarades</p></div>
+	<hr class="trait">
+
+	<div id="presentation"></div>
 
 	<div class="presentation_container">
 		<div class="presentation">
-			<img src="" alt=" PP">
+			<img src="assets/images/profil.png" alt=" PP">
 			<p></p>
 			<p>Mon nom est Wilstan Sanquer, alias <strong class="important">SAW</strong>. <br>
 				J’ai commencé le développement durant l'enfance avec de petits projets.</p>
 
-			<p>Je suis passionné par le <strong class="important">développement</strong>et le <strong
+			<p>Je suis passionné par le <strong class="important">développement</strong> et le <strong
 					class="important">réseau</strong>. <br>
 				Autodidacte et sérieux, j’apprends en continu pour progresser dans ces domaines.</p>
 
 			<p>Je construis des projets <strong class="important">modernes</strong> et <strong
 					class="important">utiles</strong>.</p>
 		</div>
-		<a href="../src/assets/pdf/CV.pdf" target="_blank"><button>CV Download</button></a>
+		<a href="../src/assets/pdf/CV_WilstanSanquer.pdf" target="_blank"><button>CV Download</button></a>
 	</div>
 
 	<hr class="trait">
-	<div class="scroll_stages">
-		<a href="https://grafipolis.fr/"><img src="assets/stages/grafipolis.png" alt="Grafipolis"></a>
-		<a href="https://kubsystemes.fr/"><img src="assets/stages/kub_systemes_logo.jpg" alt="KUB Systemes"></a>
-		<a href="https://covaldem11.fr/"><img src="assets/stages/covaldem11.png" alt="Covaldem11"></a>
-		<a href="https://ville-castelnaudary.fr/fr"><img src="" alt="Mairie Castel"></a>
+	<div class="marquee-wrapper">
+		<div class="marquee-content scroll_stages">
+			<a href="https://grafipolis.fr/" target="_blank"><img src="assets/stages/grafipolis.png" alt="Grafipolis"></a>
+			<a href="https://kubsystemes.fr/" target="_blank"><img src="assets/stages/kub_systemes_logo.jpg" alt="KUB Systemes"></a>
+			<a href="https://covaldem11.fr/" target="_blank"><img src="assets/stages/covaldem11.png" alt="Covaldem11"></a>
+			<a href="https://ville-castelnaudary.fr/fr" target="_blank"><img src="assets/stages/logo-castelnaudary-mini.png" alt="Mairie Castel"></a>
+		</div>
 	</div>
 	<hr class="trait">
+
+	<div id="contact"></div>
 
 	<div class="formulaire_container">
 		<div class="formulaire">
@@ -82,7 +128,7 @@
 			<p>Je reste à votre disposition pour toute information complémentaire <br>
 				ou pour échanger concernant une collaboration ou une proposition de stage. <br>
 				Je vous répondrai dans les meilleurs délais.</p>
-			<a href="mailto:w.sanquer@proton.me">
+			<a href="mailto:wilstan.sanquer@outlook.fr">
 				<button>Envoyer</button>
 			</a>
 		</div>
@@ -90,7 +136,7 @@
 
 	<footer>
 		<div class="footer_link">
-			<p>Made with <strong>HTML5</strong>, <strong>CSS3</strong> & <strong>JavaScript</strong></p>
+			<p>Made with <strong>HTML5</strong>, <strong>CSS3</strong> & <strong>JavaScript</strong> in <strong>WebStorm</strong></p>
 			<a href="https://github.com/wilstan-sanquer/portfolio" class="github_link">
 				View codesource on GitHub
 			</a>
@@ -108,7 +154,7 @@
 					<img src="../public/assets/icons/GitLab-Dark.svg" alt="">
 				</a>
 			</div>
-			<p>Wilstan Sanquer 2026 © All rights reserved</p>
+			<p class="signature">Wilstan Sanquer 2026 © All rights reserved</p>
 		</div>
 
 	</footer>
